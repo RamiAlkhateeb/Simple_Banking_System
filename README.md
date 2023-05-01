@@ -1,6 +1,6 @@
 # Simple_Banking_System
 
-implemention of a simple banking system that only supports the deposit and withdrawal of money. Initially, there are n bank accounts, the ith of which has money[i] money on the balance, and there is a service IBankService supporting three operations:
+Implemention of a simple banking system that only supports the deposit and withdrawal of money. Initially, there are n bank accounts, the ith of which has money[i] money on the balance, and there is a service IBankService supporting three operations:
 
 ``` C#
 public interface IBankingService
@@ -20,6 +20,20 @@ public interface IBankingService
 
 The methods should also throw an exception if either there is no account with accountId or amount is not positive. 
 
-This is a TDD task — with unit tests which fail at the beginning, the  task is to implement a solution which makes them pass.
+This is a TDD task — with the following unit tests:
+* Functional Tests
+    * Should withdraw when amount is valid and account exists
+    * Should throw ArgumentException when withdraw from non-existing account
+    * Should throw ArgumentException when withdraw wrong amount of money
+    * Should throw ArgumentException when withdraw too much money
+    * Should throw ArgumentException when deposit to non-existing account
+    * Should throw ArgumentException when deposit wrong amount of money
+    * Should deposit when amount is valid and account exists
+
+* Stress Tests
+    * Should perform all operations concurrently
+
+
+
 
 [execution time limit] 20 seconds
