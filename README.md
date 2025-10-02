@@ -7,6 +7,7 @@ TDD is important to make, Test are crucial to avoid design s,smells, what is des
 
 
 
+
 # Simple_Banking_System
 
 Implementation of a simple banking system that only supports the deposit and withdrawal of money. Initially, there are n bank accounts, the ith of which has money[i] money on the balance, and there is a service IBankService supporting three operations:
