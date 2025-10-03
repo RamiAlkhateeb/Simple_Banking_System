@@ -9,9 +9,9 @@ TDD is important to make, Test are crucial to avoid design s,smells, what is des
 
 ## TDD 3 Laws
 First, when talking about TDD, we need to mention the three laws of TDD:
-1- You must write a failing test before you write any production code.
-2- You must not write more of a test than is sufficient to fail, or fail to compile.
-3- You must not write more production code than is sufficient to make the currently failing test pass.
+1. You must write a failing test before you write any production code.
+2. You must not write more of a test than is sufficient to fail, or fail to compile.
+3. You must not write more production code than is sufficient to make the currently failing test pass.
 
 ## TDD Techniques
 - Faking
