@@ -5,10 +5,28 @@ TDD is important to make, Test are crucial to avoid design s,smells, what is des
 - Fragility: Small changes in one module cause bugs appearance in other
 - Immobility: Components can't be reused in other systems
 
+![tdd](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0hLR8MddRc5O0gqaIVJLjQ.png)
+
+## TDD 3 Laws
+First, when talking about TDD, we need to mention the three laws of TDD:
+1- You must write a failing test before you write any production code.
+2- You must not write more of a test than is sufficient to fail, or fail to compile.
+3- You must not write more production code than is sufficient to make the currently failing test pass.
+
+## TDD Techniques
+- Faking
+- Traingulation
+- Implementation
+
+Also, we need to write test in this order: 
+Exceptional - Degenerate - Ancillary
+
+Degenerative cases cause core funtionality to do nothing
+Ancillary: for example -> get size of a stack
+=> Ancillary behavior support core function
 
 
-
-# Simple_Banking_System
+# TDD Banking System
 
 Implementation of a simple banking system that only supports the deposit and withdrawal of money. Initially, there are n bank accounts, the ith of which has money[i] money on the balance, and there is a service IBankService supporting three operations:
 
